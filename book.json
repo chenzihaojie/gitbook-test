@@ -1,0 +1,42 @@
+{
+    "title": "接口文档",
+    "description": "记录 GitBook 的配置和一些插件的使用",
+    "author": "heifoni",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.2",
+    "root": ".",
+    "links" : {
+    "sidebar" : {
+        "文档地址" : "http://baibu.com"
+        }
+    },
+    "plugins": [
+        "splitter",
+        "-sharing",
+        "tbfed-pagefooter",
+        "anchors",
+        "-lunr", "-search", "search-plus",
+        "-fontsettings",
+        "-highlight",
+        "-livereload",
+        "prism",
+        "prism-themes",
+        "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy zhangjikai.com 2017",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
+}
